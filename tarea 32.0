@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	contador=1
+	leer numero
+	
+	si (numero>0)
+		mayor = numero mod 10
+		numero =nuumero mod 10
+		Mientras (numero>0) Hacer
+			dig=numero mod 10
+			si (dig>mayor) 
+				mayor=dig 
+				contador=1
+		
+				SiNo
+					si (dig=mayor)
+						mayor = dig
+						contador =contador+1
+					FinSi
+					
+				
+				FinSi
+				numero =numero mod 10
+		Fin Mientras
+	FinSi
+	mostrar " el mayor es ",mayor," y se repite ",contador
+FinAlgoritmo
